@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome -->
+    <style>
+      .contain {
+        background: #001c394d !important;
+        background: url(images/bg-icon.png);
+      }
+    </style>
+  </head>
+  <body>
+    <!-------------- nav section start -------------->
+    <nav class="bg-back">
+      <div
+        class="contain mx-auto px-4 lg:px-0 max-w-[77.625rem] flex justify-between"
+      >
+        <div class="img">
+          <a href="/src/index.html"
+            ><img class="inline-block" src="images/logo.png"
+          /></a>
+        </div>
+        <div
+          class="small-device rounded-full px-4 sm:px-16 bg-[#001b394d] border border-border-color w-full relative flex items-center"
+        >
+          <div class="flex justify-between items-center sm:hidden w-full">
+            <h2 class="font-inter font-bold text-xl text-primary">About</h2>
+            <i
+              onclick="collapse('menu', 'invisible', 'visible')"
+              id="menuIcon"
+              class="fa-solid fa-bars text-white block"
+            ></i>
+          </div>
+          <ul
+            id="menu"
+            class="w-1/2 hidden sm:flex sm:bg-transparent flex-col sm:flex-row sm:justify-between absolute sm:static sm:w-full top-full translate-y-1 right-0 gap-x-5 sm:items-center text-white text-center gap-y-0.5"
+          >
+            <li>
+              <a
+                href="#about"
+                class="font-inter font-bold text-xl text-primary hidden sm:flex cursor-pointer"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="font-inter font-bold text-xl hover:text-primary transition-colors duration-300 cursor-pointer rounded-md border border-border-color py-1 bg-secondary sm:bg-transparent sm:border-none"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                class="font-inter font-bold text-xl hover:text-primary transition-colors duration-300 cursor-pointer rounded-md border border-border-color py-1 bg-secondary sm:bg-transparent sm:border-none"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                class="font-inter font-bold text-xl hover:text-primary transition-colors duration-300 cursor-pointer rounded-md border border-border-color py-1 bg-secondary sm:bg-transparent sm:border-none"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-------------- nav section end -------------->
+    <!-------------- about section start -------------->
+    <section id="about" class="bg-back pt-5 px-4">
+      <div
+        class="contain max-w-[77.625rem] rounded-2xl p-5 md:py-14 md:px-10 mx-auto bg-secondary flex flex-col gap-y-10 md:gap-y-16 border border-border-color"
+      >
+        <div
+          class="top flex-col-reverse sm:flex-row flex justify-between gap-y-2"
+        >
+          <h1 class="font-inter font-medium text-2xl text-secondary-txt">
+            Frontend Web Developer
+          </h1>
+          <div>
+            <div
+              class="max-w-[12rem] py-1.5 px-4 flex gap-x-2.5 items-center border border-border-color rounded-full justify-between"
+            >
+              <p
+                class="font-inter font-medium text-xs sm:text-sm text-secondary-txt"
+              >
+                AVAILABLE FOR JOB
+              </p>
+              <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bottom flex flex-col-reverse sm:flex-row justify-between items-center"
+        >
+          <div class="left flex flex-col gap-y-7">
+            <div class="text flex flex-col gap-y-4">
+              <h1 class="font-inter font-semibold text-5xl text-white">
+                I’m Mohammad Nadil
+              </h1>
+              <p class="font-inter text-xl text-secondary-txt max-w-80">
+                I’m a front-end web developer focused on building responsive,
+                user-friendly websites .
+              </p>
+            </div>
+            <div class="btn flex gap-x-4 relative">
+              <div
+                id="link"
+                class="hidden absolute text-secondary-txt bg-[#001C39] border border-border-color -top-2 left-0 -translate-y-full rounded-2xl px-3 py-1"
+              >
+                <ul class="flex flex-col gap-y-2">
+                  <li>
+                    <a
+                      class="block border-b border-border-color hover:text-primary transition-all duration-300"
+                      href="mailto:mdnadil50@gmail.com"
+                    >
+                      <i class="fa-solid fa-envelope"></i>
+                      mdnadil50@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="block border-b border-border-color hover:text-primary transition-all duration-300"
+                      href="tel:+8801760152349"
+                    >
+                      <i class="fa-solid fa-phone"></i>
+                      +880 1760152349
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="block border-b border-border-color hover:text-primary transition-all duration-300"
+                      href="https://www.facebook.com/profile.php?id=100090793946195"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-facebook"></i>
+
+                      facebook Profile
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                id="linkBtn"
+                class="rounded-xl border bg-back border-border-color"
+                onclick="collapse('linkBtn', 'bg-back' , 'bg-primary')"
+              >
+                <div
+                  onclick="collapse('link', 'hidden' , 'flex')"
+                  class="hover:bg-primary font-medium text-white flex items-center gap-x-3 transition-colors duration-300 font-inter rounded-xl"
+                >
+                  <a href="#" class="p-3 flex items-center gap-3"
+                    >Contact Me <i class="fa-solid fa-angle-up"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="bg-back hover:bg-primary font-medium text-white transition-colors duration-300 font-inter rounded-xl border border-border-color"
+              >
+                <a href="https://github.com/Mohammad-Nadil" class="p-3 block">
+                  See GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="img">
+            <img
+              class="border border-border-color rounded-full w-[14.5625rem]"
+              src="images/me.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------- about section end -------------->
+    <!-------------- projects section start -------------->
+    <section id="projects" class="bg-black">
+      <div
+        class="contain max-w-[1242px] mx-auto pt-5 flex flex-col sm:flex-row px-4 lg:px-0 gap-5 justify-between"
+      >
+        <div class="left w-full sm:w-1/2 flex flex-col gap-5">
+          <div
+            class="topdiv flex flex-col md:py-[3.75rem] p-5 md:px-10 gap-y-9 md:gap-y-12 sm:w-full border border-border-color rounded-2xl bg-secondary"
+          >
+            <h2
+              class="font-inter font-semibold text-[32px] lg:text-[4.0625rem] text-secondary-txt"
+            >
+              Recent Projects
+            </h2>
+            <div class="flex relative flex-col gap-y-5 md:gap-y-6">
+              <div class="group relative">
+                <a
+                  onclick="collapse('OREBI','hidden','flex')"
+                  class="group !relative"
+                  href="#"
+                >
+                  <div
+                    onclick="collapse('OREBIhead','text-white','text-primary')"
+                    class="flex w-full h-full justify-between items-center"
+                  >
+                    <div class="left flex flex-col gap-y-2 md:gap-y-3">
+                      <h2
+                        id="OREBIhead"
+                        class="font-inter text-base md:text-2xl text-white group-hover:text-primary transition-all duration-300"
+                      >
+                        Dynamic Website
+                      </h2>
+                      <p
+                        class="text-sm md:text-xl font-inter text-secondary-txt"
+                      >
+                        with React JS
+                      </p>
+                    </div>
+                    <div class="right">
+                      <p
+                        class="text-sm md:text-xl font-inter text-secondary-txt"
+                      >
+                        OREBI
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    href="https://github.com/Mohammad-Nadil/orebi"
+                    target="_blank"
+                    id="OREBI"
+                    class="p-2 absolute top-0 right-1/3 rounded-2xl translate-x-1/2 bg-secondary-txt hidden group-hover:flex transition-all duration-300 hover:text-primary"
+                  >
+                    See project in github
+                  </a>
+                </a>
+              </div>
+              <div class="group relative">
+                <a
+                  onclick="collapse('QWERy','hidden','flex')"
+                  class="group relative transition-all duration-300"
+                  href="#"
+                  ><div
+                    onclick="collapse('QWERyhead','text-white','text-primary')"
+                    class="flex w-full h-full justify-between items-center"
+                  >
+                    <div class="left flex flex-col gap-y-2 md:gap-y-3">
+                      <h2
+                        id="QWERyhead"
+                        class="font-inter text-base md:text-2xl text-white group-hover:text-primary transition-all duration-300"
+                      >
+                        Responsive Website
+                      </h2>
+                      <p
+                        class="text-sm md:text-xl font-inter text-secondary-txt"
+                      >
+                        with Tailwind css
+                      </p>
+                    </div>
+                    <div class="right">
+                      <p
+                        class="text-sm md:text-xl font-inter text-secondary-txt"
+                      >
+                        QWERy
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    href="https://github.com/Mohammad-Nadil/qwery"
+                    target="_blank"
+                    id="QWERy"
+                    class="p-2 absolute top-0 right-1/3 rounded-2xl translate-x-1/2 bg-secondary-txt hidden group-hover:flex transition-all duration-300 hover:text-primary"
+                  >
+                    See project in github
+                  </a>
+                </a>
+              </div>
+              <div class="group relative">
+                <a
+                  onclick="collapse('MedicalFunc','hidden','flex')"
+                  class="group relative transition-all duration-300"
+                  href="#"
+                  ><div
+                    onclick="collapse('MedicalFunchead','text-white','text-primary')"
+                    class="flex w-full h-full justify-between items-center"
+                  >
+                    <div class="left flex flex-col gap-y-2 md:gap-y-3">
+                      <h2
+                        id="MedicalFunchead"
+                        class="font-inter text-base md:text-2xl text-white group-hover:text-primary transition-all duration-300"
+                      >
+                        Responsive Website
+                      </h2>
+                      <p
+                        class="text-sm md:text-xl font-inter text-secondary-txt"
+                      >
+                        with Bootstrap css
+                      </p>
+                    </div>
+                    <div class="right">
+                      <p
+                        class="text-sm md:text-xl font-inter text-secondary-txt"
+                      >
+                        MedicalFunc
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    href="https://github.com/Mohammad-Nadil/MedicalFunc"
+                    target="_blank"
+                    id="MedicalFunc"
+                    class="p-2 absolute top-0 right-1/3 rounded-2xl translate-x-1/2 bg-secondary-txt hidden group-hover:flex transition-all duration-300 hover:text-primary"
+                  >
+                    See project in github
+                  </a>
+                </a>
+              </div>
+              <div class="group relative">
+                <a
+                  onclick="collapse('Agenc','hidden','flex')"
+                  class="block relative group transition-all duration-300"
+                  href="#"
+                >
+                  <div
+                    onclick="collapse('Agenchead','text-white','text-primary')"
+                    class="flex w-full h-full justify-between items-center"
+                  >
+                    <div class="left flex flex-col gap-y-2 md:gap-y-3">
+                      <h2
+                        id="Agenchead"
+                        class="font-inter text-base md:text-2xl text-white group-hover:text-primary transition-all duration-300"
+                      >
+                        Responsive Website
+                      </h2>
+                      <p
+                        class="text-sm md:text-xl font-inter text-secondary-txt"
+                      >
+                        with vanilla html, css, js
+                      </p>
+                    </div>
+                    <div class="right">
+                      <p
+                        class="text-sm md:text-xl font-inter text-secondary-txt"
+                      >
+                        Agenc
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    id="Agenc"
+                    class="p-2 absolute top-0 right-1/3 rounded-2xl translate-x-1/2 bg-secondary-txt hidden group-hover:flex transition-all duration-300"
+                  >
+                    Work In Progress
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mobile group w-full px-10 pt-12 pb-2.5 border border-border-color rounded-2xl bg-secondary"
+          >
+            <div class="text flex justify-between">
+              <div class="left">
+                <h2 class="font-inter font-semibold text-2xl text-white">
+                  Responsive web design
+                </h2>
+                <p class="font-inter text-xl text-secondary-txt">
+                  Travel website
+                </p>
+              </div>
+              <div class="right">
+                <i
+                  class="fa-solid fa-arrow-right border border-border-color rounded-full text-white group-hover:bg-primary p-1 group-hover:-rotate-45 transition-all duration-300"
+                ></i>
+              </div>
+            </div>
+            <div class="img max-w-[27.5rem]">
+              <img class="" src="images/mobile.png" alt="images/mobile.png" />
+            </div>
+          </div>
+        </div>
+        <div class="right flex flex-col gap-7 w-full sm:w-1/2">
+          <a href="#projects">
+            <div
+              class="grid grid-rows-2 grid-cols-2 place-content-center md:flex md:justify-between gap-4 px-12 w-full border border-border-color rounded-2xl bg-[url(images/bg-icon.png)] bg-cover bg-right py-7"
+            >
+              <img class="max-w-" src="images/html.png" alt="images/html.png" />
+              <img class="" src="images/css.png" alt="images/css.png" />
+              <img class="" src="images/js.png" alt="images/js.png" />
+              <img class="" src="images/react.png" alt="images/react.png" />
+              <img
+                class="hidden lg:flex"
+                src="images/next.png"
+                alt=""
+              /></div></a
+          ><a href="#projects">
+            <div
+              class="mobile group w-full px-14 pt-10 pb-2.5 border border-border-color rounded-2xl bg-secondary"
+            >
+              <div class="text flex justify-between">
+                <div class="left">
+                  <h2 class="font-inter font-semibold text-2xl text-white">
+                    OREBI
+                  </h2>
+                </div>
+                <div class="right">
+                  <i
+                    class="fa-solid fa-arrow-right border border-border-color rounded-full text-white group-hover:bg-primary p-1 group-hover:-rotate-45 transition-all duration-300"
+                  ></i>
+                </div>
+              </div>
+              <div class="img max-w-[27.8125rem]">
+                <img
+                  class="my-8"
+                  src="images/Ecom.png"
+                  alt="images/mobile.png"
+                />
+              </div>
+              <div class="text">
+                <p class="font-inter font-bold text-3xl text-white">
+                  Ecom Web Page Design
+                </p>
+              </div>
+            </div></a
+          ><a href="#projects">
+            <div
+              class="mobile group w-full px-14 pt-10 pb-2.5 border border-border-color rounded-2xl bg-secondary"
+            >
+              <div class="text flex justify-between">
+                <div class="left">
+                  <h2 class="font-inter font-bold text-2xl text-white">
+                    MedicalFunc
+                  </h2>
+                </div>
+                <div class="right">
+                  <i
+                    class="fa-solid fa-arrow-right border border-border-color rounded-full text-white group-hover:bg-primary p-1 group-hover:-rotate-45 transition-all duration-300"
+                  ></i>
+                </div>
+              </div>
+              <div class="img max-w-[27.8125rem]">
+                <img
+                  class="my-8"
+                  src="images/medical.png"
+                  alt="images/mobile.png"
+                />
+              </div>
+              <div class="text">
+                <p class="font-inter font-bold text-3xl text-white">
+                  Medical website
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-------------- projects section end -------------->
+    <!-------------- service section start -------------->
+    <section id="service" class="pt-5 bg-back">
+      <div
+        class="contain max-w-[77.625rem] mx-auto bg-secondary border border-border-color rounded-2xl py-12 flex flex-col !gap-14"
+      >
+        <div class="text">
+          <h1
+            class="font-inter font-semibold text-[4.0625rem] text-center text-white"
+          >
+            Service
+          </h1>
+          <div class="flex flex-wrap px-5 justify-around gap-y-2">
+            <div
+              class="w-[18.4375rem] h-[213px] border border-border-color rounded-2xl bg-[url(images/service1.png)] text-secondary-txt py-8 px-10 flex flex-col gap-y-6 text-center"
+            >
+              <i class="fas fa-desktop text-7xl"></i>
+              <p class="max-w-[13.6875rem] font-inter font-bold text-2xl">
+                Responsive Web Design
+              </p>
+            </div>
+            <div
+              class="w-[18.4375rem] h-[213px] border border-border-color rounded-2xl bg-[url(images/service2.png)] text-secondary-txt py-8 px-10 flex flex-col gap-y-6 text-center"
+            >
+              <i class="fas fa-palette text-[70px]"></i>
+              <p class="max-w-[13.6875rem] font-inter font-bold text-2xl">
+                UI/UX Design Implementation
+              </p>
+            </div>
+            <div
+              class="w-[18.4375rem] h-[213px] border border-border-color rounded-2xl bg-[url(images/service3.png)] text-secondary-txt py-8 px-10 flex flex-col gap-y-6 text-center"
+            >
+              <i class="fas fa-globe text-7xl"></i>
+              <p class="max-w-[13.6875rem] font-inter font-bold text-2xl">
+                Web Application Development
+              </p>
+            </div>
+            <div
+              class="w-[18.4375rem] h-[213px] border border-border-color rounded-2xl bg-[url(images/service4.png)] text-secondary-txt py-8 px-10 flex flex-col gap-y-6 text-center"
+            >
+              <i class="fas fa-bolt text-5xl"></i>
+              <p class="max-w-[13.6875rem] font-inter font-bold text-2xl">
+                Front-End Performance Optimization
+              </p>
+            </div>
+            <div
+              class="w-[18.4375rem] h-[213px] border border-border-color rounded-2xl bg-[url(images/service5.png)] text-secondary-txt py-8 px-10 flex flex-col gap-y-6 text-center"
+            >
+              <i class="fas fa-wrench text-5xl"></i>
+              <p class="max-w-[13.6875rem] font-inter font-bold text-2xl">
+                Website Maintenance & Updates
+              </p>
+            </div>
+            <div
+              class="w-[18.4375rem] h-[213px] border border-border-color rounded-2xl bg-[url(images/service6.png)] text-secondary-txt py-8 px-10 flex flex-col gap-y-6 text-center"
+            >
+              <i class="fas fa-puzzle-piece text-7xl"></i>
+              <p class="max-w-[13.6875rem] font-inter font-bold text-2xl">
+                Cross-Browser Compatibility
+              </p>
+            </div>
+            <div
+              class="w-[18.4375rem] h-[213px] border border-border-color rounded-2xl bg-[url(images/service7.png)] text-secondary-txt py-8 px-10 flex flex-col gap-y-6 text-center"
+            >
+              <i class="fas fa-file-alt text-7xl"></i>
+              <p class="max-w-[13.6875rem] font-inter font-bold text-2xl">
+                Landing Page Design
+              </p>
+            </div>
+            <div
+              class="w-[18.4375rem] h-[213px] border border-border-color rounded-2xl bg-[url(images/service8.png)] text-secondary-txt py-8 px-10 flex flex-col gap-y-6 text-center"
+            >
+              <i class="fas fa-link text-7xl"></i>
+              <p class="max-w-[13.6875rem] font-inter font-bold text-2xl">
+                API Integration
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------- service section end -------------->
+    <!-------------- footer section end -------------->
+    <footer class="bg-back py-5">
+      <div
+        class="contain !bg-[url(images/footerBg.png)] !bg-cover bg-left flex md:flex-row flex-col-reverse justify-between gap-5 items-center max-w-[77.625rem] mx-auto py-7 md:p-11 border border-border-color rounded-2xl"
+      >
+        <div>
+          <p class="font-inter font-medium text-2xl text-secondary-txt">
+            Portfolio 2024
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <a
+            href="https://www.facebook.com/profile.php?id=100090793946195"
+            target="_blank"
+          >
+            <div>
+              <p
+                class="font-inter text-xl text-[#FDFDFD] hover:text-primary transition-all duration-300"
+              >
+                facebook
+              </p>
+            </div>
+          </a>
+          <a href="https://github.com/Mohammad-Nadil" target="_blank">
+            <div>
+              <p
+                class="font-inter text-xl text-[#FDFDFD] hover:text-primary transition-all duration-300"
+              >
+                GitHub
+              </p>
+            </div>
+          </a>
+          <a href="tel:+8801760152349">
+            <div>
+              <p
+                class="font-inter text-xl text-[#FDFDFD] hover:text-primary transition-all duration-300"
+              >
+                WhatsApp
+              </p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <div>
+            <div
+              class="w-52 py-1.5 px-4 flex gap-x-2.5 items-center border border-border-color rounded-full justify-between"
+            >
+              <p
+                class="font-inter font-medium text-xs sm:text-sm text-secondary-txt"
+              >
+                AVAILABLE FOR JOB
+              </p>
+              <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-------------- footer section end -------------->
+
+    <script>
+      function collapse(id, remove, add) {
+        event.preventDefault();
+        let element = document.getElementById(id);
+        if (element.classList.contains(remove)) {
+          element.classList.remove(remove);
+          element.classList.add(add);
+        } else {
+          element.classList.remove(add);
+          element.classList.add(remove);
+        }
+      }
+    </script>
+  </body>
+</html>
