@@ -1188,6 +1188,18 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 123 255 / var(--tw-text-opacity));
 }
+.bg-secondary {
+  background: #001c394d !important;
+}
+.justify-evenly{
+  justify-content: space-evenly;
+
+}
+
+.px-2{
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
 
 @media (min-width: 640px) {
   .sm\:static {
