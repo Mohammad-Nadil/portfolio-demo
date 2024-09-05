@@ -1195,6 +1195,9 @@ video {
   justify-content: space-evenly;
 
 }
+.bg-back{
+  background: #000000 !important;
+}
 
 .px-2{
   padding-left: 0.625rem;
